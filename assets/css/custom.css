@@ -1,0 +1,19 @@
+.single-logo img {
+  max-width: 150px;
+  max-height: 150px;
+}
+
+.counter-content ul {
+  list-style: disc;
+}
+.counter-content ul li {
+  margin-bottom: 20px;
+}
+
+.list-disc {
+  list-style-type: disc !important;
+}
+
+.list-decimal {
+  list-style-type: decimal !important;
+}

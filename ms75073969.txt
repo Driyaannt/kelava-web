@@ -1,0 +1,5 @@
+{
+  "Description": "Domain ownership verification file for Microsoft 365 - place in the website root",
+  "Domain": "kelava.id",
+  "Id": "9a5073d8-264e-4d2d-a5fc-510006374495"
+}
