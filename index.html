@@ -43,35 +43,60 @@
     <!--====== Custom CSS ======-->
     <link rel="stylesheet" href="assets/css/custom.css" />
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-BBJ07K2WFW"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script src="https://cdnjs.cloudflare.com/a    async
+      src="https://www.googletagmanager.com/gtag/js?id=G-BBJ07K2WFW"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'G-BBJ07K2WFW');
-</script>
-    
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '3436186463282016');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=3436186463282016&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
+      gtag("config", "G-BBJ07K2WFW");
+    </script>
 
-<meta name="facebook-domain-verification" content="p4v2c381q05y4y910v916bn5k23f49" />
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "3436186463282016");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=3436186463282016&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+
+    <meta
+      name="facebook-domain-verification"
+      content="p4v2c381q05y4y910v916bn5k23f49"
+    />
   </head>
 
   <body>
@@ -103,6 +128,144 @@ src="https://www.facebook.com/tr?id=3436186463282016&ev=PageView&noscript=1"
     </div>
 
     <!--====== PRELOADER PART ENDS ======-->
+
+    <!-- Video Modal Styles -->
+    <style>
+      @keyframes modalFadeIn {
+        from {
+          opacity: 0;
+          transform: translate(-50%, -50%) scale(0.8);
+        }
+        to {
+          opacity: 1;
+          transform: translate(-50%, -50%) scale(1);
+        }
+      }
+      
+      @keyframes modalFadeOut {
+        from {
+          opacity: 1;
+          transform: translate(-50%, -50%) scale(1);
+        }
+        to {
+          opacity: 0;
+          transform: translate(-50%, -50%) scale(0.8);
+        }
+      }
+      
+      @keyframes backdropFadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      
+      @keyframes backdropFadeOut {
+        from {
+          opacity: 1;
+        }
+        to {
+          opacity: 0;
+        }
+      }
+      
+      #videoModal {
+        transition: opacity 0.3s ease-out;
+      }
+      
+      #videoModal.show {
+        animation: backdropFadeIn 0.3s ease-out forwards;
+      }
+      
+      #videoModal.show .video-container {
+        animation: modalFadeIn 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+      }
+      
+      #videoModal.hide {
+        animation: backdropFadeOut 0.3s ease-out forwards;
+      }
+      
+      #videoModal.hide .video-container {
+        animation: modalFadeOut 0.3s ease-out forwards;
+      }
+      
+      .video-container {
+        position: fixed !important;
+        top: 50% !important;
+        left: 50% !important;
+        transform: translate(-50%, -50%) !important;
+      }
+      
+      #closeModal {
+        transition: all 0.3s ease;
+      }
+      
+      #closeModal:hover {
+        transform: rotate(90deg) scale(1.1);
+        color: #2196F3 !important;
+      }
+    </style>
+
+    <!-- Video Modal - Placed here to ensure it's in DOM -->
+    <div
+      id="videoModal"
+      style="
+        display: none;
+        position: fixed;
+        z-index: 99999;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.4);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+      "
+    >
+      <span
+        id="closeModal"
+        style="
+          position: absolute;
+          top: 30px;
+          right: 50px;
+          color: #333333;
+          font-size: 45px;
+          font-weight: bold;
+          cursor: pointer;
+          z-index: 100001;
+          text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        "
+        >&times;</span
+      >
+      <div
+        class="video-container"
+        style="
+          width: 90%;
+          max-width: 1200px;
+        "
+      >
+        <video
+          id="introVideo"
+          width="100%"
+          height="auto"
+          controls
+          style="
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+            display: block;
+            max-height: 85vh;
+            object-fit: contain;
+          "
+          "
+        >
+          <source src="assets/video/introduction.mp4" type="video/mp4" />
+          Browser Anda tidak mendukung video tag.
+        </video>
+      </div>
+    </div>
+
     <div id="kelava-content"></div>
     <div id="top-content"></div>
     <div id="bottom-content"></div>
@@ -110,36 +273,31 @@ src="https://www.facebook.com/tr?id=3436186463282016&ev=PageView&noscript=1"
     <br /><br />
 
     <!--====== FOOTER PART START ======-->
-
-    <footer id="footer" class="footer-area pt-120">
+    <footer id="footer" class="footer-area pt-200">
       <div class="container">
-        <div class="footer-widget pb-100">
+        <div class="footer-widget">
           <div class="row">
             <div class="col-md-6 col-sm-7">
               <div class="footer-link d-flex mt-50 justify-content-md-between">
                 <div
-                  class="link-wrapper wow fadeIn"
+                  class="wow fadeIn"
                   data-wow-duration="1s"
                   data-wow-delay="0.4s"
                 >
-                  <div class="footer-title">
+                  <div class="footer-title pt-100">
                     <h4 class="title">Privacy & Terms</h4>
                   </div>
-                  <ul class="link" style="margin-top: 15px; font-family: 'Poppins'; font-size: 17px !important; color: #fff; line-height: 1 !important; font-weight: 200;">
-                    <li>
-                      <a class="page-scroll" href="?c=privacy-policy&s=#home"
+                  <div class="footer-links-row mb-2" style="display: flex; gap: 30px; margin-top: 20px;">
+                      <a class="page-scroll" href="?c=privacy-policy&s=#home" style="color: #fff; text-decoration: none; transition: color 0.3s ease;"
                         >Privacy Policy</a
                       >
-                    </li>
-                    <li>
-                      <a class="page-scroll" href="?c=terms&s=#home"
+                      <a class="page-scroll" href="?c=terms&s=#home" style="color: #fff; text-decoration: none; transition: color 0.3s ease;"
                         >Terms of Service</a
                       >
-                    </li>
-                  </ul>
-                </div>
+                  </div>
+                  </div>
                 <!-- footer wrapper -->
-              </div> 
+              </div>
               <!-- footer link -->
             </div>
           </div>
@@ -151,8 +309,7 @@ src="https://www.facebook.com/tr?id=3436186463282016&ev=PageView&noscript=1"
             <div class="col-lg-12">
               <div class="copyright d-sm-flex justify-content-between">
                 <div class="copyright-content">
-                  <p class="text">
-                    Ⓒ2020. Kelava. All Right Reserved.</p>
+                  <p class="text">Ⓒ2026. Kelava. All Right Reserved.</p>
                 </div>
                 <!-- copyright content -->
               </div>
@@ -227,8 +384,11 @@ src="https://www.facebook.com/tr?id=3436186463282016&ev=PageView&noscript=1"
 
     <!--====== Main js ======-->
     <script src="assets/js/main.js"></script>
-    
+
     <!--====== Stats Counter js ======-->
     <script src="assets/js/stats-counter.js"></script>
+
+    <!--====== Video Modal js ======-->
+    <script src="assets/js/video-modal.js"></script>
   </body>
 </html>

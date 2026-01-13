@@ -976,7 +976,7 @@ p {
       display: none; } }
 
 .about-content {
-  max-width: 480px; }
+  max-width: 600px; }
   .about-content .text {
     margin-top: 15px; 
     font-family: 'Poppins';
@@ -1395,6 +1395,10 @@ p {
   background-position: top center;
   position: relative;
   z-index: 5; }
+
+  .footer-links-row a:hover {
+        color: #2196F3 !important;
+      }
 
 .footer-area::before {
   position: absolute;
