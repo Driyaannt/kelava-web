@@ -21,7 +21,7 @@
 
     <div class="container" style="position: relative; z-index: 2; padding-top: 0px; padding-bottom: 60px; max-width: 1320px;">
       <div class="row align-items-center justify-content-center" style="margin-top: -150px;">
-        <div class="col-lg-6 col-md-12" style="padding-right: 50px; padding-left: 15px;">
+        <div class="col-lg-6 col-md-12 order-2 order-lg-1" style="padding-right: 50px; padding-left: 15px;">
           <div class="header-hero-content">
             <div 
               class="wow fadeInUp"
@@ -78,7 +78,7 @@
               data-wow-delay="1s"
               style="display: flex; gap: 15px; flex-wrap: wrap;"
             >
-              <a href="https://wa.me/6281553889920" target="_blank" class="btn-primary-hero" style="display: inline-flex; align-items: center; justify-content: center; background: #ffffff; color: #2196F3; padding: 16px 40px; border-radius: 12px; font-weight: 700; font-size: 16px; text-decoration: none; transition: all 0.3s; box-shadow: 0 10px 30px rgba(0,0,0,0.2); border: 2px solid transparent;">
+              <a href="https://wa.me/628113643244" target="_blank" class="btn-primary-hero" style="display: inline-flex; align-items: center; justify-content: center; background: #ffffff; color: #2196F3; padding: 16px 40px; border-radius: 12px; font-weight: 700; font-size: 16px; text-decoration: none; transition: all 0.3s; box-shadow: 0 10px 30px rgba(0,0,0,0.2); border: 2px solid transparent;">
                 Coba Gratis 14 Hari
               </a>
               <button id="playVideoBtn" class="btn-video-hero" style="display: inline-flex; align-items: center; justify-content: center; background: transparent; color: #ffffff; padding: 16px 40px; border-radius: 12px; font-weight: 700; font-size: 16px; cursor: pointer; transition: all 0.3s; border: 2px solid #ffffff;">
@@ -91,7 +91,7 @@
           </div>
           <!-- header hero content -->
         </div>
-        <div class="col-lg-6 col-md-12">
+        <div class="col-lg-6 col-md-12 order-1 order-lg-2">
           <div
             class="header-hero-image wow fadeInRight"
             data-wow-duration="1.3s"
@@ -134,6 +134,64 @@
         animation-play-state: paused;
         background: rgba(255,255,255,0.3);
         transform: translateX(-50%) scale(1.1);
+      }
+      
+      /* Mobile Hero Responsive */
+      @media (max-width: 991px) {
+        .header-hero .row {
+          margin-top: 0 !important;
+        }
+        
+        .header-hero-image {
+          margin-top: 0 !important;
+          padding: 20px 15px !important;
+          margin-bottom: 30px;
+        }
+        
+        .header-hero-content {
+          text-align: center !important;
+          padding: 0 15px;
+        }
+        
+        .header-hero-content .wow {
+          justify-content: center !important;
+        }
+        
+        .header-hero-content h1,
+        .header-hero-content h4,
+        .header-hero-content p {
+          text-align: center !important;
+        }
+        
+        .header-hero-content p {
+          max-width: 100% !important;
+          margin-left: auto !important;
+          margin-right: auto !important;
+        }
+        
+        .header-hero-content > div:last-child {
+          justify-content: center !important;
+        }
+      }
+      
+      @media (max-width: 767px) {
+        .header-hero-content h1 {
+          font-size: 36px !important;
+        }
+        
+        .header-hero-content h4 {
+          font-size: 24px !important;
+        }
+        
+        .header-hero-content p {
+          font-size: 16px !important;
+        }
+        
+        .btn-primary-hero,
+        .btn-video-hero {
+          width: 100%;
+          max-width: 300px;
+        }
       }
     </style>
     <a href="#stat-section" class="scroll-down-btn" style="position: absolute; bottom: 40px; left: 50%; transform: translateX(-50%); z-index: 10; width: 50px; height: 50px; border-radius: 50%; background: rgba(255,255,255,0.2); backdrop-filter: blur(10px); border: 2px solid rgba(255,255,255,0.4); display: flex; align-items: center; justify-content: center; cursor: pointer; transition: all 0.3s; text-decoration: none;">
@@ -829,7 +887,7 @@
               </div>
             </div>
              <div class="navbar-btn" style="position: inherit; margin-top: 30px;">
-              <a href="https://wa.me/6281553889920" target="_blank" class="main-btn" style="display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%); border: none; color: #ffffff; width: 100%; padding: 14px 30px; border-radius: 12px; font-weight: 700; text-decoration: none; box-shadow: 0 4px 15px rgba(37,99,235,0.3); transition: all 0.3s; font-size: 15px;">
+              <a href="https://wa.me/628113643244" target="_blank" class="main-btn" style="display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%); border: none; color: #ffffff; width: 100%; padding: 14px 30px; border-radius: 12px; font-weight: 700; text-decoration: none; box-shadow: 0 4px 15px rgba(37,99,235,0.3); transition: all 0.3s; font-size: 15px;">
                 Pilih Paket
               </a>
             </div>
@@ -941,7 +999,7 @@
               </div>
             </div>
             <div class="navbar-btn" style="position: inherit; margin-top: 30px;">
-              <a href="https://wa.me/6281553889920" target="_blank" class="main-btn" style="display: flex; align-items: center; justify-content: center; background: #ffffff; color: #2563eb; width: 100%; padding: 14px 30px; border-radius: 12px; font-weight: 700; text-decoration: none; box-shadow: 0 4px 15px rgba(0,0,0,0.2); transition: all 0.3s; font-size: 15px;">
+              <a href="https://wa.me/628113643244" target="_blank" class="main-btn" style="display: flex; align-items: center; justify-content: center; background: #ffffff; color: #2563eb; width: 100%; padding: 14px 30px; border-radius: 12px; font-weight: 700; text-decoration: none; box-shadow: 0 4px 15px rgba(0,0,0,0.2); transition: all 0.3s; font-size: 15px;">
                 Pilih Paket
               </a>
             </div>
@@ -1021,7 +1079,7 @@
               </div>
             </div>
             <div class="navbar-btn" style="position: inherit; margin-top: 30px;">
-              <a href="https://wa.me/6281553889920" target="_blank" class="main-btn" style="display: flex; align-items: center; justify-content: center; width: 100%; padding: 14px 30px; background: linear-gradient(135deg, #10b981 0%, #059669 100%); border: none; color: #ffffff; border-radius: 12px; font-weight: 700; text-decoration: none; transition: all 0.3s; box-shadow: 0 4px 15px rgba(16,185,129,0.3); font-size: 15px;">
+              <a href="https://wa.me/628113643244" target="_blank" class="main-btn" style="display: flex; align-items: center; justify-content: center; width: 100%; padding: 14px 30px; background: linear-gradient(135deg, #10b981 0%, #059669 100%); border: none; color: #ffffff; border-radius: 12px; font-weight: 700; text-decoration: none; transition: all 0.3s; box-shadow: 0 4px 15px rgba(16,185,129,0.3); font-size: 15px;">
                 Hubungi Sales
               </a>
             </div>
@@ -1590,7 +1648,7 @@
           </div>
           <div style="text-align: center" class="navbar-btn">
             <br /><br />
-            <a href="https://wa.me/6281553889920" target="_blank" class="main-btn"
+            <a href="https://wa.me/628113643244" target="_blank" class="main-btn"
                 >Kontak Kami Untuk Info Lebih Lanjut</a
             >
           </div>

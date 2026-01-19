@@ -1,0 +1,8 @@
+# .gitignore for kelava repository
+# Ignore the specific video file requested
+/assets/video/introduction.mp4
+
+# Common optional ignores
+.DS_Store
+node_modules/
+*.log

@@ -615,16 +615,46 @@ p {
     padding: 10px 0;
     position: relative;
     font-family: "Poppins", sans-serif; }
+    .navbar-nav .nav-item a::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 0;
+      height: 3px;
+      background: linear-gradient(90deg, #1bb9ec 0%, #0e9ace 100%);
+      border-radius: 2px;
+      transition: width 0.3s ease-out; }
+    .navbar-nav .nav-item-login a::after {
+      display: none !important; }
+    .navbar-nav .nav-item.active a::after,
+    .navbar-nav .nav-item a:hover::after {
+      width: 100%; }
     @media only screen and (min-width: 768px) and (max-width: 991px) {
       .navbar-nav .nav-item a {
         display: block;
         padding: 4px 0;
-        color: #2E2E2E; } }
+        color: #2E2E2E; }
+      .navbar-nav .nav-item.active a {
+        color: #1bb9ec;
+        font-weight: 600; }
+      .navbar-nav .nav-item a:hover {
+        color: #1bb9ec; }
+      .navbar-nav .nav-item a::after {
+        background: linear-gradient(90deg, #1bb9ec 0%, #0e9ace 100%); } }
     @media (max-width: 767px) {
       .navbar-nav .nav-item a {
         display: block;
         padding: 4px 0;
-        color: #2E2E2E; } }
+        color: #2E2E2E; }
+      .navbar-nav .nav-item.active a {
+        color: #1bb9ec;
+        font-weight: 600; }
+      .navbar-nav .nav-item a:hover {
+        color: #1bb9ec; }
+      .navbar-nav .nav-item a::after {
+        background: linear-gradient(90deg, #1bb9ec 0%, #0e9ace 100%); } }
   .navbar-nav .nav-item:hover .sub-menu {
     top: 100%;
     opacity: 1;
