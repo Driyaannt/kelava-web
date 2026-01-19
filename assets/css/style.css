@@ -604,7 +604,7 @@ p {
     .navbar-nav .nav-item {
       margin: 0; } }
   .navbar-nav .nav-item a {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
     color: #fff;
     -webkit-transition: all 0.3s ease-out 0s;
@@ -757,6 +757,54 @@ p {
 
 .sticky .navbar-nav .nav-item.active > a, .sticky .navbar-nav .nav-item:hover > a {
   color: #361CC1; }
+
+/* Login Button Styling */
+.navbar-nav .nav-item-login .login-btn {
+  background: rgba(255, 255, 255, 0.2) !important;
+  color: #fff !important;
+  padding: 6px 25px !important;
+  border-radius: 20px !important;
+  border: 2px solid rgba(255, 255, 255, 0.3) !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: all 0.3s ease !important;
+  font-weight: 600 !important; }
+  
+.navbar-nav .nav-item-login .login-btn:hover {
+  background: #fff !important;
+  color: #2196F3 !important;
+  border-color: #fff !important;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); }
+
+/* Sticky state - Login button dengan background putih solid */
+.sticky .navbar-nav .nav-item-login .login-btn {
+  background: #2196F3 !important;
+  color: #fff !important;
+  border: 2px solid #2196F3 !important; }
+  
+.sticky .navbar-nav .nav-item-login .login-btn:hover {
+  background: #1976D2 !important;
+  color: #fff !important;
+  border-color: #1976D2 !important;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(33, 150, 243, 0.3); }
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .navbar-nav .nav-item-login .login-btn {
+    background: #2196F3 !important;
+    color: #fff !important;
+    border: 2px solid #2196F3 !important;
+    margin-top: 10px;
+    text-align: center; } }
+
+@media (max-width: 767px) {
+  .navbar-nav .nav-item-login .login-btn {
+    background: #2196F3 !important;
+    color: #fff !important;
+    border: 2px solid #2196F3 !important;
+    margin-top: 10px;
+    text-align: center; } }
 
 /*===== HEADER HERO =====*/
 .header-hero {

@@ -17,3 +17,358 @@
 .list-decimal {
   list-style-type: decimal !important;
 }
+
+/* Hero Section Responsive Styles */
+@media only screen and (max-width: 991px) {
+  .header-hero .row {
+    margin-top: -60px !important;
+  }
+  
+  .header-hero .col-lg-6 {
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+  }
+  
+  .header-hero .header-title {
+    font-size: 36px !important;
+    text-align: center !important;
+  }
+  
+  .header-hero h4 {
+    font-size: 22px !important;
+    text-align: center !important;
+  }
+  
+  .header-hero .text {
+    font-size: 15px !important;
+    text-align: center !important;
+    max-width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  
+  .header-hero .header-hero-content > div:first-child {
+    justify-content: center !important;
+    text-align: center;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  
+  .header-hero .header-hero-content > div:last-of-type {
+    justify-content: center !important;
+  }
+  
+  .header-hero-image {
+    padding-left: 0 !important;
+    margin-top: 40px;
+    padding-right: 0 !important;
+  }
+  
+  .header-hero-image > div {
+    max-width: 450px !important;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .header-hero {
+    min-height: 100vh !important;
+    padding: 80px 0 60px !important;
+  }
+  
+  .header-hero .container {
+    padding-top: 20px !important;
+    padding-bottom: 40px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+  
+  .header-hero .row {
+    margin-top: 0 !important;
+  }
+  
+  .header-hero .col-lg-6 {
+    padding-right: 10px !important;
+    padding-left: 10px !important;
+  }
+  
+  .header-hero .header-hero-content > div:first-child {
+    width: auto !important;
+    display: inline-flex !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding: 8px 18px !important;
+    margin-bottom: 20px !important;
+  }
+  
+  .header-hero .header-hero-content > div:first-child span {
+    font-size: 12px !important;
+  }
+  
+  .header-hero .header-title {
+    font-size: 28px !important;
+    line-height: 1.2 !important;
+    margin-bottom: 15px !important;
+    letter-spacing: -0.5px !important;
+  }
+  
+  .header-hero h4 {
+    font-size: 19px !important;
+    margin-bottom: 18px !important;
+  }
+  
+  .header-hero .text {
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+    margin-bottom: 28px !important;
+    padding: 0 8px !important;
+  }
+  
+  .btn-primary-hero,
+  .btn-video-hero {
+    padding: 15px 32px !important;
+    font-size: 14px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    border-radius: 10px !important;
+  }
+  
+  .header-hero .header-hero-content > div:last-of-type {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 12px !important;
+  }
+  
+  .header-hero-image {
+    margin-top: 35px !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  
+  .header-hero-image > div {
+    max-width: 400px !important;
+    margin: 0 auto !important;
+    padding: 0 15px;
+  }
+  
+  .scroll-down-btn {
+    bottom: 20px !important;
+    width: 40px !important;
+    height: 40px !important;
+  }
+  
+  .scroll-down-btn svg {
+    width: 20px !important;
+    height: 20px !important;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .header-hero {
+    padding: 70px 0 50px !important;
+  }
+  
+  .header-hero .container {
+    padding-left: 18px !important;
+    padding-right: 18px !important;
+  }
+  
+  .header-hero .header-hero-content > div:first-child {
+    padding: 7px 16px !important;
+    margin-bottom: 18px !important;
+  }
+  
+  .header-hero .header-hero-content > div:first-child span {
+    font-size: 11px !important;
+  }
+  
+  .header-hero .header-title {
+    font-size: 26px !important;
+    margin-bottom: 12px !important;
+  }
+  
+  .header-hero h4 {
+    font-size: 17px !important;
+    margin-bottom: 15px !important;
+  }
+  
+  .header-hero .text {
+    font-size: 13px !important;
+    line-height: 1.55 !important;
+    margin-bottom: 25px !important;
+    padding: 0 5px !important;
+  }
+  
+  .btn-primary-hero,
+  .btn-video-hero {
+    padding: 14px 30px !important;
+    font-size: 14px !important;
+  }
+  
+  .btn-video-hero svg {
+    width: 16px !important;
+    height: 16px !important;
+    margin-right: 6px !important;
+  }
+  
+  .header-hero-image > div {
+    max-width: 350px !important;
+    padding: 0 10px;
+  }
+  
+  .scroll-down-btn {
+    bottom: 15px !important;
+    width: 38px !important;
+    height: 38px !important;
+  }
+}
+
+/* Feature Sections Responsive Styles */
+@media only screen and (max-width: 991px) {
+  .about-area .section-title h3.title {
+    font-size: 28px !important;
+    line-height: 1.3 !important;
+  }
+  
+  .about-area .text {
+    font-size: 16px !important;
+  }
+  
+  .about-area .counter-content ul li div,
+  .about-area .counter-content table td {
+    font-size: 16px !important;
+  }
+  
+  .about-area .video-icon img {
+    max-width: 100% !important;
+    height: auto !important;
+    width: auto !important;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .about-area {
+    padding-top: 40px !important;
+  }
+  
+  .about-area .container {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+  
+  .about-area .mt-50 {
+    margin-top: 30px !important;
+  }
+  
+  .about-area .section-title h3.title {
+    font-size: 24px !important;
+    line-height: 1.3 !important;
+    text-align: center !important;
+    margin-bottom: 15px !important;
+  }
+  
+  .about-area .section-title .line {
+    margin: 0 auto 20px !important;
+  }
+  
+  .about-area .text {
+    font-size: 15px !important;
+    line-height: 1.6 !important;
+    text-align: center !important;
+    padding: 0 10px !important;
+  }
+  
+  .about-area .counter-content {
+    margin-top: 20px !important;
+  }
+  
+  .about-area .counter-content ul {
+    padding: 0 10px !important;
+  }
+  
+  .about-area .counter-content ul li {
+    margin-bottom: 10px !important;
+    justify-content: flex-start !important;
+  }
+  
+  .about-area .counter-content ul li span {
+    font-size: 20px !important;
+    margin-right: 10px !important;
+  }
+  
+  .about-area .counter-content ul li div {
+    font-size: 15px !important;
+    line-height: 1.4 !important;
+  }
+  
+  .about-area .counter-content table {
+    width: 100% !important;
+    border-spacing: 10px !important;
+  }
+  
+  .about-area .counter-content table td {
+    font-size: 15px !important;
+    padding: 5px !important;
+  }
+  
+  .about-area .counter-content table td img {
+    max-width: 20px !important;
+    height: auto !important;
+  }
+  
+  .about-area .video-icon {
+    margin-top: 20px !important;
+  }
+  
+  .about-area .video-icon img {
+    max-width: 100% !important;
+    width: 100% !important;
+    height: auto !important;
+  }
+  
+  .about-area .row {
+    display: flex !important;
+  }
+  
+  /* Default: Text first, Image second */
+  .about-area .row .col-lg-6:first-child {
+    order: 1 !important;
+  }
+  
+  .about-area .row .col-lg-6:last-child {
+    order: 2 !important;
+  }
+  
+  /* Special case: When image is in first column, show text first on mobile */
+  .about-area .row .col-lg-6:first-child:has(.video-icon) {
+    order: 2 !important;
+  }
+  
+  .about-area .row .col-lg-6:last-child:has(.section-title) {
+    order: 1 !important;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .about-area {
+    padding-top: 30px !important;
+  }
+  
+  .about-area .section-title h3.title {
+    font-size: 22px !important;
+    padding: 0 10px !important;
+  }
+  
+  .about-area .text {
+    font-size: 14px !important;
+    padding: 0 5px !important;
+  }
+  
+  .about-area .counter-content ul li div,
+  .about-area .counter-content table td {
+    font-size: 14px !important;
+  }
+  
+  .about-area .counter-content ul li span {
+    font-size: 18px !important;
+  }
+}
